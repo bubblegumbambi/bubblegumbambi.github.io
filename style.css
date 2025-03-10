@@ -8,6 +8,7 @@
 .cls-card {
     background-color: pink;
     border-radius: 35px;
+    zoom: 1.25;
 }
 
 #id-hero-pic {

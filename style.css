@@ -79,3 +79,58 @@ body {
         opacity: 1;
     }
 }
+
+.tooltip-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .custom-tooltip {
+    position: absolute;
+    bottom: 125%; /* show above the word */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000; /* or pastel pink if you want! */
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1000;
+    transition: 0.2s;
+  }
+
+  .custom-tooltip {
+    background-color: #f1bad2;
+    color: #b73f69;
+    font-family: 'Comfortaa', cursive;
+    padding: 6px 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(154, 14, 79, 0.297);
+  }
+
+  .custom-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #f1bad2 transparent transparent transparent;
+  }  
+  
+  .tooltip-wrapper:hover .custom-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .cls-supscript {
+    font-size: smaller;
+    padding-bottom: 0;
+  }

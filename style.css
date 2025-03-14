@@ -17,6 +17,17 @@
     transition: 0.2s;
 }
 
+.cls-links {
+  font-weight: normal;
+  transition: 0.2s;
+}
+
+.cls-links:hover {
+  font-weight: bold;
+  font-size: larger;
+  transition: 0.2s;
+}
+
 #id-hero-pic:hover {
     height: 10.5rem;
     overflow: hidden;

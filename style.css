@@ -186,3 +186,20 @@ body {
     padding-bottom: 0;
   }
 
+  .fa-star {
+    font-size: 100%;
+    transition: 0.2s;
+    cursor: context-menu;
+  }
+
+  .fa-star:hover {
+    font-size: 120%;
+    transition: 0.2s;
+    cursor: context-menu;
+  }
+  
+  sup {
+    margin-top: 0;
+    font-size: 70%;
+    opacity: 75%;
+  }

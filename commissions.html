@@ -2,136 +2,152 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUBBLEGUM BAMBI'S ART GALLERY</title>
-    <link rel="icon" href="/media/img/icon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUBBLEGUM BAMBI'S ART GALLERY</title>
+  <link rel="icon" href="/media/img/icon.ico">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pangolin&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pangolin&display=swap" rel="stylesheet">
 
-    <style>
-        .gallery-img {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            cursor: pointer;
-            border-radius: 15px;
-            transition: transform 0.2s ease-in-out;
-        }
-        
-        .gallery-img:hover {
-            transform: scale(1.05);
-        }
-    </style>
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+    .gallery-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 15px;
+      transition: transform 0.2s ease-in-out;
+      image-rendering: auto;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.02);
+    }
+
+    .btn {
+      white-space: nowrap;
+    }
+
+    .text-center .btn {
+      display: inline-block;
+      margin: auto;
+    }
+  </style>
 </head>
 
 <body class="pangolin-regular">
+  <audio loop autoplay>
+    <source src="/media/audio/bananashake.mp3">
+  </audio>
 
-<audio loop autoplay>
-        <source src="/media/audio/bananashake.mp3">
-    </audio>
+  <div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center py-5">
+    <div class="cls-card text-center p-4">
+      <a href="/index.html" class="btn btn-primary mb-4 px-4">
+        <i class="fa-solid fa-arrow-left me-1"></i> GO BACK TO HOME PAGE
+      </a>
 
-    <div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center py-5">
-        <div class="cls-card text-center p-4">
-            <a href="/index.html" class="btn btn-primary mb-4">
-                <i class="fa-solid fa-arrow-left me-1"></i> GO BACK TO HOME PAGE
-            </a>
-            
-            <!-- Commission Pricing Section -->
-            <div class="faq-select mb-2">
-                <img src="/art/art/commissions.png" alt="Commission Pricing" width="300rem" class="my-3 rounded-2">
+      <!-- Commission Pricing Section -->
+      <div class="faq-select mb-2">
+        <img src="/art/art/commissions.png" alt="Commission Pricing" width="300rem" class="my-3 rounded-2">
+      </div>
+      <div class="container">
+        <div class="faq-select">
+          <p class="a opacity-70 cls-supscript mt-3">*These prices are for standard commissions. Double for furry characters*</p>
+          <div class="row gy-3">
+            <div class="col-12 col-md-6">
+              <p class="h3 q">Fully Rendered</p>
+              <div class="a text-center">
+                <p class="mb-0">$25 • Headshot</p>
+                <p class="mb-0">$40 • Half Body</p>
+                <p class="mb-0">$60 • Full Body</p>
+              </div>
             </div>
-            <div class="container">
-                <div class="faq-select">
-                    <p class="a opacity-70 cls-supscript mt-3">*These prices are for standard commissions. Double for furry characters*</p>
-                    <div class="row gy-3">
-                        <div class="col-12 col-md-6">
-                            <p class="h3 q">Fully Rendered</p>
-                            <div class="a text-center">
-                                <p class="mb-0">$25 • Headshot</p>
-                                <p class="mb-0">$40 • Half Body</p>
-                                <p class="mb-0">$60 • Full Body</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <p class="h3 q">Line Art</p>
-                            <div class="a text-center">
-                                <p class="mb-0">$15 • Headshot</p>
-                                <p class="mb-0">$25 • Half Body</p>
-                                <p class="mb-0">$35 • Full Body</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 col-md-6">
+              <p class="h3 q">Line Art</p>
+              <div class="a text-center">
+                <p class="mb-0">$15 • Headshot</p>
+                <p class="mb-0">$25 • Half Body</p>
+                <p class="mb-0">$35 • Full Body</p>
+              </div>
             </div>
-            
-            <hr class="my-3 a">
-            
-        <p class="a opacity-50 cls-supscript mt-3">(click to view in detail)</p>
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 gx-2 gy-3 mt-4"> 
-            <div class="col"><img src="/art/art/art20.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art19.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art18.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art17.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art16.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art15.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art14.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art13.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art12.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art11.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art10.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art9.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art8.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art7.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art6.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art5.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art4.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art3.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art2.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
-            <div class="col"><img src="/art/art/art1.jpg" class="gallery-img img-fluid rounded-2 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#imageModal"></div
-            
+          </div>
         </div>
+      </div>
 
-        <div class="text-center">
-            <a href="/index.html" class="btn btn-primary mb-4 text-center">
-                <i class="fa-solid fa-arrow-left me-1"></i> GO BACK TO HOME PAGE
-            </a>
+      <hr class="my-3 a">
+
+      <p class="a opacity-50 cls-supscript mt-3">(click to view in detail)</p>
+
+      <!-- IMAGE GALLERY -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 gx-2 gy-3 mt-4">
+        <!-- Art 21–40 -->
+        <!-- Just paste this kind of block repeatedly -->
+        <!-- I already made all 20 -->
+        <div class="col"><img src="/art/art/art21.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art22.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art23.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art24.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art25.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art26.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art27.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art28.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art29.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art30.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art31.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art32.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art33.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art34.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art35.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art36.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art37.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art38.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art39.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+        <div class="col"><img src="/art/art/art40.jpg" class="gallery-img img-fluid rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal"></div>
+      </div>
+
+      <!-- Footer Button -->
+      <div class="text-center my-4">
+        <a href="/index.html" class="btn btn-primary px-4">
+          <i class="fa-solid fa-arrow-left me-1"></i> GO BACK TO HOME PAGE
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          ZOOMED IN IMAGE :DD
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
-        <!-- Image Modal -->
-        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        ZOOMED IN IMAGE :DD
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="" id="modalImage" class="img-fluid rounded-3">
-                    </div>
-                </div>
-            </div>
+        <div class="modal-body text-center">
+          <img src="" id="modalImage" class="img-fluid rounded-3">
         </div>
+      </div>
+    </div>
+  </div>
 
-        <script>
-            document.querySelectorAll('.gallery-img').forEach(img => {
-                img.addEventListener('click', function() {
-                    document.getElementById('modalImage').src = this.src;
-                });
-            });
-        </script>
+  <!-- Zoom functionality -->
+  <script>
+    document.querySelectorAll('.gallery-img').forEach(img => {
+      img.addEventListener('click', function () {
+        document.getElementById('modalImage').src = this.src;
+      });
+    });
+  </script>
 
 </body>
 
